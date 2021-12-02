@@ -1,0 +1,64 @@
+Matrix  
+m <- matrix (vector, nrow, byrow = TRUE/FALSE) 
+TRUE (byrow) FALSE (bycol) 
+
+Atomic Vector --- is.vector = TRUE/FALSE 
+vector <- c(). mutiple values 
+five <- 5   single vlaue 
+is.vector(five)
+## TRUE 
+
+Length
+length return the length of an atomic vector 
+length (value)
+##1
+
+Class
+class will give the attribute of the vector 
+class ("Hello") 
+## "character"
+
+Data Times
+POSIXct: saved in UTC zone
+POSIXt: given in seconds 
+
+Factors 
+factors store categorical information (ethnicity, eye color) 
+
+Gender 
+gender <- factor(c("male", "female", "female", "male"))
+
+typeof (gender)
+## "integer"
+
+attributes (gender)
+## $levels 
+## [1] "female" "male"
+##
+## $class
+## [1] "factor"
+unclass(gender) is going to show R is storing your factor 
+
+factor to character string --- as.character 
+as.character (gender)
+## "male"    "female" "female" "male" 
+
+Convert R data one type to another with as function 
+as. character (1)
+## 
+"1"
+as.logical (1)
+## TRUE 
+as. numeric (FALSE)
+## 0 
+
+List 
+list1 <- list(100:130, "R", list(TRUE, FALSE))
+
+Data Frame 
+1 "R"  TRUE 
+2  "S"  FALSE 
+3  "T"  TRUE 
+data frames store data as a sequence of columns every column in data frame must be the same length 
+df <- data.frame(face = c("ace", "two", "six"0, 
+   suit = c("clubs", "clubs", "clubs"), value = c(1, 2, 3)
